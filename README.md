@@ -36,10 +36,10 @@ Puedes clonar todos los repositorios de forma automática y asegurarte de tener 
 
 ```bash
 repos=(
- "https://github.com/Streamings-Team2/mfe-st-host.git"
- "https://github.com/Streamings-Team2/mfe-st-common.git"
- "https://github.com/Streamings-Team2/mfe-st-error.git"
- "https://github.com/Streamings-Team2/mfe-st-utils.git"
+ "https://github.com/Streamings-Team2/mfe-st-host"
+ "https://github.com/Streamings-Team2/mfe-st-common"
+ "https://github.com/Streamings-Team2/mfe-st-error"
+ "https://github.com/Streamings-Team2/mfe-st-utils"
 )
 
 for repo_url in "${repos[@]}"
