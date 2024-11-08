@@ -54,8 +54,9 @@ do
             cd "$repo_name"
 	    #cambia a la rama develop 
             git checkout develop		
-	#instala dependencias
-	npm install
+ printf "\e[36m <----------------------------instala dependencias---------------------------->\e[0m\n"
+	npm i
+
          # Regresa al directorio anterior
             cd ..
         else
