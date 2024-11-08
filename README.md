@@ -44,30 +44,31 @@ repos=(
 
 for repo_url in "${repos[@]}"
 do
-  git clone "$repo_url"
-     repo_name=$(basename "$repo_url")
-	  if [ ! -d "$repo_name" ]; then
-  printf "\e[36m <----------------------------$repo_name---------------------------->\e[0m\n"
-            # Si no existe, clona el repositorio
-            git clone "$repo_url"
-            # Entra en la carpeta del repositorio
-            cd "$repo_name"
-	    #cambia a la rama develop 
-            git checkout develop		
- printf "\e[36m <----------------------------instala dependencias---------------------------->\e[0m\n"
-	npm i
+  repo_name=$(basename "$repo_url" .git)
 
-         # Regresa al directorio anterior
-            cd ..
-        else
-            # Si la carpeta existe, entra en ella
-            cd "$repo_name"
- printf "\e[36m <----------------------------$repo_name---------------------------->\e[0m\n"
-            # Cambia a la rama 'develop'
-            git checkout develop
-            # Actualiza el repositorio con los cambios más recientes
-            git pull
-            # Regresa al directorio anterior
-            cd ..
-        fi
+  if [ ! -d "$repo_name" ]; then
+    printf "\e[36m<---------------------------- Clonando $repo_name ---------------------------->\e[0m\n"
+    git clone "$repo_url"
+    
+    cd "$repo_name" || exit
+    
+    printf "\e[36m<---------------------------- Cambiando a la rama develop ---------------------------->\e[0m\n"
+    git checkout develop 
+    
+    printf "\e[36m<---------------------------- Instalando dependencias ---------------------------->\e[0m\n"
+    npm install
+    
+    cd ..
+  else
+    cd "$repo_name" || exit
+    printf "\e[36m<---------------------------- Actualizando $repo_name ---------------------------->\e[0m\n"
+    git checkout develop 
+    git pull
+    
+    printf "\e[36m<---------------------------- Instalando dependencias ---------------------------->\e[0m\n"
+    npm install
+
+    cd ..
+  fi
 done
+
