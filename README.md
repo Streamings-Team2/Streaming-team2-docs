@@ -47,6 +47,7 @@ do
   git clone "$repo_url"
      repo_name=$(basename "$repo_url")
 	  if [ ! -d "$repo_name" ]; then
+  printf "\e[36m <----------------------------$repo_name---------------------------->\e[0m\n"
             # Si no existe, clona el repositorio
             git clone "$repo_url"
             # Entra en la carpeta del repositorio
@@ -60,6 +61,7 @@ do
         else
             # Si la carpeta existe, entra en ella
             cd "$repo_name"
+ printf "\e[36m <----------------------------$repo_name---------------------------->\e[0m\n"
             # Cambia a la rama 'develop'
             git checkout develop
             # Actualiza el repositorio con los cambios más recientes
