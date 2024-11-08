@@ -51,10 +51,11 @@ do
             git clone "$repo_url"
             # Entra en la carpeta del repositorio
             cd "$repo_name"
-            #git checkout develop
-            #npm install
-         
-            # Regresa al directorio anterior
+	    #cambia a la rama develop 
+            git checkout develop		
+	#instala dependencias
+	npm install
+         # Regresa al directorio anterior
             cd ..
         else
             # Si la carpeta existe, entra en ella
