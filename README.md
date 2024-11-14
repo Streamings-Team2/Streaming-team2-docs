@@ -71,4 +71,20 @@ do
     cd ..
   fi
 done
+```
 
+### Comando para ejecutar los repositorios
+```bash
+cd mfe-st-<repositorio>
+npm start
+```
+
+## Test
+
+Actualmente los repositorios que cuentan con test implementados son mfe-st-host y mfe-st-utils
+
+### Test para el repositorio host
+![mfe-st-host](./img/host_test.png)
+
+### Test para el repositorio utils
+![mfe-st-host](./img/utils_test.png)
