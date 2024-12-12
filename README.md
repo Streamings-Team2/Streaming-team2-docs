@@ -40,6 +40,7 @@ repos=(
  "https://github.com/Streamings-Team2/mfe-st-common"
  "https://github.com/Streamings-Team2/mfe-st-error"
  "https://github.com/Streamings-Team2/mfe-st-utils"
+ "https://github.com/Streamings-Team2/mfe-st-login-v2"
 )
 
 for repo_url in "${repos[@]}"
