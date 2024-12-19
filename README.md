@@ -41,6 +41,7 @@ repos=(
  "https://github.com/Streamings-Team2/mfe-st-error"
  "https://github.com/Streamings-Team2/mfe-st-utils"
  "https://github.com/Streamings-Team2/mfe-st-login-v2"
+ "https://github.com/Streamings-Team2/mse-graphql"
 )
 
 for repo_url in "${repos[@]}"
