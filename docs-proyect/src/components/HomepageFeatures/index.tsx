@@ -10,35 +10,110 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Facil de usuar',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Diseñado desde cero para ser fácilmente instalado, intuitivo para 
+        gestionar la informacion de vuelos y con estructura minimalista
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Enfocado a operadores',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Aplicacion enfocado a la gestion de las actividades de los operadores 
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Desarrollado modular',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Posibilita que diferentes partes de la aplicación se desplieguen de manera autónoma
+        agiliza el ciclo de actualizaciones y mejora la disponibilidad
       </>
     ),
   },
+];
+
+const Integrantes: FeatureItem[] = [
+  {
+    title: 'Andres Camilo Forero Amaya',
+    Svg: require('@site/static/img/logo.svg').default,
+    description: (
+      <>
+        Desarrollador
+      </>
+    ),
+  },
+  {
+    title: 'Sebastian Sanabria Garcia',
+    Svg: require('@site/static/img/logo.svg').default,
+    description: (
+      <>
+        Desarrollador
+      </>
+    ),
+  },
+  {
+    title: 'Nicolas Cifuentes Barriga',
+    Svg: require('@site/static/img/logo.svg').default,
+    description: (
+      <>
+        Desarrollador
+      </>
+    ),
+  },
+  {
+    title: 'Sebastian Lobo Guerrero',
+    Svg: require('@site/static/img/logo.svg').default,
+    description: (
+      <>
+        Desarrollador
+      </>
+    ),
+  },
+  {
+    title: 'Frans David Aguirre Rueda',
+    Svg: require('@site/static/img/logo.svg').default,
+    description: (
+      <>
+        Desarrollador
+      </>
+    ),
+  },
+  {
+    title: 'Gloria Marcela Carmona',
+    Svg: require('@site/static/img/logo.svg').default,
+    description: (
+      <>
+        Desarrolladora
+      </>
+    ),
+  },
+  {
+    title: 'Brayan Sneyder Alvarez Valencia',
+    Svg: require('@site/static/img/logo.svg').default,
+    description: (
+      <>
+        Desarrollador
+      </>
+    ),
+  },
+  {
+    title: 'Yaneth Xiomara Rojas Ramirez',
+    Svg: require('@site/static/img/logo.svg').default,
+    description: (
+      <>
+        Desarrolladora
+      </>
+    ),
+  },
+  
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {
@@ -57,14 +132,28 @@ function Feature({title, Svg, description}: FeatureItem) {
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+    <>
+      <section className={styles.features}>
+        <div className="container">
+          <div className="row">
+            {FeatureList.map((props, idx) => (
+              <Feature key={idx} {...props} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <Heading as="h2" className="text--center">
+        Streamings-Team2
+      </Heading>
+      <section className={styles.features}>
+        <div className="container">
+          <div className="row">
+            {Integrantes.map((props, idx) => (
+              <Feature key={idx} {...props} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

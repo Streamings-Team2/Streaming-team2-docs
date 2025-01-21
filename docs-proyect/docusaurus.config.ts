@@ -10,15 +10,15 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://dxa7x01m543ss.cloudfront.net',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Streamings-Team2', // Usually your GitHub org/user name.
+  projectName: 'Streamings-Team2', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -68,7 +68,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Streaming team 2',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -78,11 +78,11 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Streamings-Team2',
           label: 'GitHub',
           position: 'right',
         },
@@ -95,8 +95,24 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Arquitectura',
+              to: '/docs/category/arquitectura',
+            },
+            {
+              label: 'Prototipo Figma',
+              to: '/docs/category/prototipo-figma',
+            },
+            {
+              label: 'Repositorios',
+              to: '/docs/category/repositorios',
+            },
+            {
+              label: 'GraphQl',
+              to: '/docs/category/GraphQl',
+            },
+            {
+              label: 'Despliegue',
+              to: '/docs/category/despliegue',
             },
           ],
         },
@@ -104,16 +120,12 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Github',
+              href: 'https://github.com/Streamings-Team2',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Canal de teams de la celula',
+              href: 'https://teams.microsoft.com/l/channel/19%3A7a057a4591324384ad240370971f0327%40thread.skype/Area%20-%20Micro%20Frontend?groupId=2768ca93-35c2-4d40-85cd-20c83e26aa8b&tenantId=3048dc87-43f0-4100-9acb-ae1971c79395',
             },
           ],
         },
@@ -126,12 +138,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Streamings-Team2',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Streamings-Team2, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
