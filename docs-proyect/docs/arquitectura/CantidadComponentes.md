@@ -6,10 +6,10 @@ sidebar_position: 2
 
 ### Se definen los siguientes componentes reutilizables:​
 
+- Alertas​
 - Botonería.​
 - Campos de formulario.​
 - Etiquetas de estado de vuelta.​
 - Loader.​
 - Paginador.​
 - Tabla​
-- Alertas​
