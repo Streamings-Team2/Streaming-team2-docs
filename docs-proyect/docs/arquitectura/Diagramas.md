@@ -1,14 +1,15 @@
 ---
-sidebar_label: 'Diagramas de arquitectura'
-sidebar_position: 5
+sidebar_label: "Diagramas de arquitectura"
+sidebar_position: 4
 ---
+
 # Diagramas de arquitectura
 
-### Diagrama de Contexto 
+### Diagrama de Contexto
 
 ![Docs Version Dropdown](./img/diagramaContexto.png)
 
-### Diagrama de Componentes 
+### Diagrama de Componentes
 
 ![Docs Version Dropdown](./img/diagramaComponentes.png)
 
@@ -40,7 +41,6 @@ sidebar_position: 5
 
   - Privada: Exclusiva para los microservicios.​
 
-
 - CloudFront: Acelera la entrega de contenido con cache y protege el acceso directo a los buckets de S3.​
 
 - Amazon S3: Cada MFE se despliega en un bucket individual, configurado para hosting estático con permisos públicos.​
@@ -52,4 +52,3 @@ sidebar_position: 5
 - RDS: Implementada en una subred privada y accesible solo por microservicios en la misma VPC para mayor seguridad.
 
 ![Docs Version Dropdown](./img/diagramaNube.png)
-

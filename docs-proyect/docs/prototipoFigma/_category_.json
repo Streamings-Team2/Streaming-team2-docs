@@ -2,6 +2,7 @@
   "label": "Prototipo Figma",
   "position": 2,
   "link": {
-    "type": "generated-index"
+    "type": "doc",
+    "id": "figma-description"
   }
 }

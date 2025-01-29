@@ -1,7 +1,8 @@
 ---
-sidebar_label: 'Cantidad de componentes'
-sidebar_position: 2
+sidebar_label: "Cantidad de componentes"
+sidebar_position: 3
 ---
+
 # Número de componentes
 
 ### Se definen los siguientes componentes reutilizables:​
