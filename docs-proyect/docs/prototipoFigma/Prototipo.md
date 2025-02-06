@@ -1,6 +1,5 @@
 ---
-id: figma-description
-title: "Prototipo Figma"
+title: "Enlaces de los prototipos"
 sidebar_position: 1
 ---
 

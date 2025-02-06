@@ -1,8 +1,8 @@
 {
   "label": "CI - CD",
-  "position": 5,
+  "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Integración continua/entrega o despliegue continuo"
+    "description": "Integración continua/entrega o despliegue continuo."
   }
 }

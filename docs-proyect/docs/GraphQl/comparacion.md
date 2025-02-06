@@ -1,7 +1,9 @@
 ---
-title: "Comparación con fetch"
-sidebar_position: 1
+sidebar_label: "Comparación con fetch"
+sidebar_position: 2
 ---
+
+# Comparación con fetch
 
 Para este proceso se mantuvo el comportamiento haciendo uso de fetch y un log
 con el cual validar la cantidad de veces que se realiza la consulta al API. Esta

@@ -1,8 +1,9 @@
 ---
-id: graph-description
-title: "Implementación"
-sidebar_position: 5
+sidebar_label: "Implementación de GraphQL"
+sidebar_position: 1
 ---
+
+# Implementación de GraphQL
 
 Tras llevar a cabo el proceso de implementación de GraphQL en el aplicativo, se realizaron las siguientes pruebas:
 

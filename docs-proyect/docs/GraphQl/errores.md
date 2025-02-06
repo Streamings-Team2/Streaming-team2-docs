@@ -1,7 +1,9 @@
 ---
-title: "Manejo de errores"
-sidebar_position: 3
+sidebar_label: "Manejo de errores"
+sidebar_position: 4
 ---
+
+# Manejo de errores
 
 Tras la implementación de un manejo de errores en el esquema del servidor de GraphQL, se realizaron consultas al API las cuales no encontrarían el registro correspondiente, consiguiendo manejar la respuesta como success en la red pero con la información correspondiente del error en la misma. Finalmente, manejar el error desde el Frontend gracias a la información recibida.
 

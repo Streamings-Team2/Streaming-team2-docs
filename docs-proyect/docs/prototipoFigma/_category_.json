@@ -2,7 +2,7 @@
   "label": "Prototipo Figma",
   "position": 2,
   "link": {
-    "type": "doc",
-    "id": "figma-description"
+    "type": "generated-index",
+    "description": "Enlaces para los prototipos del aplicativo en figma."
   }
 }

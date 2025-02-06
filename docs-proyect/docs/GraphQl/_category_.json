@@ -2,7 +2,7 @@
   "label": "GraphQl",
   "position": 6,
   "link": {
-    "type": "doc",
-    "id": "graph-description"
+    "type": "generated-index",
+    "description": "Implementación de GraphQl."
   }
 }
